@@ -15,7 +15,7 @@ yfinance==1.2.0
 finvizfinance==0.14.6
 
 # Scraping
-playwright>=1.44.0
+# playwright>=1.44.0  # optional — only needed for X/Twitter scraping, requires local chromium install
 beautifulsoup4==4.12.3
 lxml==6.0.2
 curl_cffi>=0.7.0

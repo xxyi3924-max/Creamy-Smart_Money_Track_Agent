@@ -44,6 +44,12 @@ def fetch_x_posts(ticker: str) -> dict:
         return _empty()
 
     try:
+        import playwright  # noqa — check if installed before spawning a loop
+    except ImportError:
+        print("[x_scraper] playwright not installed — skipping X data")
+        return _empty()
+
+    try:
         loop = asyncio.new_event_loop()
         try:
             return loop.run_until_complete(
