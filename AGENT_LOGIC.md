@@ -6,7 +6,7 @@
 
 **Short answer: No — not before the prompt rewrite.**
 
-The original prompt said `ALWAYS call first`, `ALWAYS call second` six times in a numbered list. The LLM was executing a fixed sequence with no choice in tool selection or ordering. The only real reasoning happened at the very end, when it saw all results and wrote the verdict.
+The original prompt said `ALWAYS call first`, `ALWAYS call second` six times in a numbered list. The LLM executes a fixed sequence with no choice in tool selection or ordering. The only real reasoning happened at the very end, when it saw all results and wrote the verdict.
 
 The scoring table made it worse. By specifying exact point values (`+2 if unusual=true AND bullish...`), we replaced LLM judgment with arithmetic that a simple Python `if/else` could do. The model was a pipeline executor, not an analyst.
 
