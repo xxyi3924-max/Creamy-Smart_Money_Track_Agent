@@ -3,7 +3,8 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(cd:*)",
-      "Bash(ipconfig getifaddr:*)"
+      "Bash(ipconfig getifaddr:*)",
+      "Bash(find:*)"
     ]
   }
 }
